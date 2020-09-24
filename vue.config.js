@@ -3,8 +3,11 @@ module.exports = {
     css: {
         loaderOptions: {
             postcss: {
-                plugins: [require('autoprefixer'), require('postcss-px2rem')({
-                    remUnit: 75
+                plugins: [require('autoprefixer'), require('postcss-plugin-px2rem')({
+                    remUnit: 75,
+                    propList: ["*"],
+                    selectorBlackList: ['html', 'mint-', 'van-', 'mpvue-', 'calendar', 'iconfont'],
+                    propBlackList: ['border']
                 })]
             }
         }
