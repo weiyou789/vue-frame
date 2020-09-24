@@ -46,12 +46,12 @@ function mixinLoading(interceptors) {
     if (!_loading) {
         _loading = Toast.loading({
             message: '加载中...',
-            forbidClick: true
+            forbidClick: true,
+            duration: 0,
         })
       store.commit(SET_AXIOS_LOADING, true)
     }
     loadingCount++
-
     return config
   }
 

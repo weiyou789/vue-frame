@@ -3,8 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "serve:h5": "cross-env VUE_APP_TERMINAL=H5 vue-cli-service serve",
+    "test:h5": "cross-env VUE_APP_TERMINAL=H5 vue-cli-service build --mode test",
+    "devtest:h5": "cross-env VUE_APP_TERMINAL=H5 vue-cli-service build --mode devtest",
+    "preview:h5": "cross-env VUE_APP_TERMINAL=H5 vue-cli-service build --mode preview",
+    "build:h5": "cross-env VUE_APP_TERMINAL=H5 vue-cli-service build",
+    "serve:pc": "cross-env VUE_APP_TERMINAL=PC vue-cli-service serve",
+    "test:pc": "cross-env VUE_APP_TERMINAL=PC vue-cli-service build --mode test",
+    "devtest:pc": "cross-env VUE_APP_TERMINAL=PC vue-cli-service build --mode devtest",
+    "preview:pc": "cross-env VUE_APP_TERMINAL=PC vue-cli-service build --mode preview",
+    "build:pc": "cross-env VUE_APP_TERMINAL=PC vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
@@ -26,6 +34,7 @@
     "node-sass": "^4.12.0",
     "sass-loader": "^8.0.0",
     "vant": "^2.2.5",
-    "vue-template-compiler": "^2.6.10"
+    "vue-template-compiler": "^2.6.10",
+    "cross-env": "^7.0.2"
   }
 }
