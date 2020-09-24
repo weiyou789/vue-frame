@@ -1,26 +1,13 @@
 # vue-iframe
 
-## Project setup
+## 安装依赖
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+### 启动development环境
 
-### Compiles and minifies for production
 ```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
+npm run serve:h5 //启动移动端h5编译
+npm run serve:pc //启动PC端编译
 ```
